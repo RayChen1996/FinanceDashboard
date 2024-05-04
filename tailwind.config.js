@@ -2,6 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         primary: {
@@ -29,5 +32,6 @@ export default {
       },
     },
   },
-  plugins: ["daisyui"],
+  darkMode: false,
+  plugins: [require("daisyui")],
 };

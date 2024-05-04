@@ -1,4 +1,8 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {
+  createRouter,
+  createWebHistory,
+  createWebHashHistory,
+} from "vue-router";
 import Home from "../components/Layouts/pages/Home.vue";
 import About from "../components/Layouts/pages/About.vue";
 
@@ -21,7 +25,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory("/FinanceDashboard/"),
   routes,
 });
 

@@ -7,7 +7,7 @@ import TopBar from "./components/Layouts/Basic/TopBar.vue";
   <div class="flex container">
     <Nav />
 
-    <div class="flex-1">
+    <div class="flex-1 bg-white-light">
       <TopBar />
       <router-view />
     </div>

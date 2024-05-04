@@ -1,39 +1,16 @@
 <template>
-  <div>
-    <h1>Admin Page</h1>
-
-    <div class="overflow-x-auto">
-      <table class="table w-full">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Job</th>
-            <th>Favorite Color</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-base-200">
-            <th>1</th>
-            <td>Cy Ganderton</td>
-            <td>Quality Control Specialist</td>
-            <td>Blue</td>
-          </tr>
-
-          <tr>
-            <th>2</th>
-            <td>Hart Hagerty</td>
-            <td>Desktop Support Technician</td>
-            <td>Purple</td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Brice Swyre</td>
-            <td>Tax Accountant</td>
-            <td>Red</td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="container w-11/12">
+    <div class="flex justify-between">
+      <select className="select select-ghost   ">
+        <option disabled selected>All (4)</option>
+        <option>必要支出</option>
+        <option>非必要</option>
+      </select>
+      <span> 2 comments </span>
     </div>
+    <ul class="menu menu-lg w-56 rounded-box">
+      <li><a>出國基金</a></li>
+      <li><a>保險費</a></li>
+    </ul>
   </div>
 </template>

@@ -1,7 +1,9 @@
 <template>
-  <div class="bg-gray-100 h-full flex items-center flex-col">
-    <div class="h-screen">
-      <img class="mt-10 ml-20 mr-28" src="/logo-ANSWER.svg" alt="" />
+  <div class="bg-gray-100 h-screen flex items-center flex-col">
+    <div class="">
+      <router-link to="/">
+        <img class="mt-10 ml-20 mr-28" src="/logo-ANSWER.svg" alt=""
+      /></router-link>
 
       <ul class="flex flex-col gap-2 justify-center mt-8">
         <li
@@ -30,50 +32,14 @@
           </router-link>
         </li>
       </ul>
-
-      <!-- <ul class="flex flex-col gap-2 justify-center mt-8">
-        <li class="flex items-center gap-2">
-          <router-link to="/Dashboard">
-            <div>
-              <div class="w-2 outline inline-block h-full bg-black"></div>
-              <span class="material-icons">home</span>
-              <label>Dashboard</label>
-            </div>
-          </router-link>
-        </li>
-        <li class="flex items-center gap-2">
-          <router-link to="/Question">
-            <span class="material-icons">help_outline</span> Question
-          </router-link>
-        </li>
-        <li class="flex items-center gap-2">
-          <router-link to="/Assignment">
-            <span class="material-icons">assignment</span> Assignment
-          </router-link>
-        </li>
-        <li class="flex items-center gap-2">
-          <router-link to="/Course">
-            <span class="material-icons">menu_book</span> Course
-          </router-link>
-        </li>
-        <li class="flex items-Admin gap-2">
-          <router-link to="/Dashboard">
-            <span class="material-icons">admin_panel_settings</span> Admin
-          </router-link>
-        </li>
-        <li class="flex items-center gap-2">
-          <router-link to="/Setting">
-            <span class="material-icons">settings</span> Settings
-          </router-link>
-        </li>
-      </ul> -->
     </div>
-    <div class="flex justify-around w-full">
+    <div class="flex-1"></div>
+    <div class="flex justify-around w-10/12">
       <img class="rounded-full w-10 h-10" src="/andychen.jpeg" alt="" />
 
       <div class="flex flex-col">
-        <span> Andy Chen </span>
-        <span>andy0401@mail.com</span>
+        <span> Ray Chen </span>
+        <span>ray.10315332@mail.com</span>
       </div>
     </div>
   </div>
@@ -88,27 +54,27 @@ const navItems = ref([
     path: "/Dashboard",
   },
   {
-    label: "Question",
+    label: "收入管理",
     icon: "help_outline",
     path: "/Question",
   },
   {
-    label: "Assignment",
+    label: "预算管理",
     icon: "assignment",
     path: "/Assignment",
   },
   {
-    label: "Course",
+    label: "支出管理",
     icon: "menu_book",
     path: "/Course",
   },
   {
-    label: "Admin",
+    label: "儲蓄計畫",
     icon: "admin_panel_settings",
     path: "/Admin",
   },
   {
-    label: "Settings",
+    label: "財務報告",
     icon: "settings",
     path: "/Setting",
   },
